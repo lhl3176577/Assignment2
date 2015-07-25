@@ -1,0 +1,18 @@
+﻿body {
+}
+
+
+
+
+.navbar-default{
+     background-color: antiquewhite  !important;
+     border-color:darkorchid;
+     background-image:none;
+     
+}
+
+.navbar-brand {
+    background-image: url('../images/electric-wires-720.jpg' );
+    background-position:center;
+    background-size:contain;
+}
