@@ -73,6 +73,7 @@
     <Content Include="Content\Styles.css" />
     <Content Include="Default.aspx" />
     <Content Include="HomePage.Master" />
+    <Content Include="images\electric-wire.jpg" />
     <Content Include="images\electric-wires-720.jpg" />
     <Content Include="JobOffer.aspx" />
     <Content Include="Login.aspx" />
