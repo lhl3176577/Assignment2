@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ContactUs.aspx" />
+    <Content Include="Content\Style1.css" />
     <Content Include="Content\Styles.css" />
     <Content Include="Default.aspx" />
     <Content Include="HomePage.Master" />

@@ -24,11 +24,11 @@
 
 <body>
     <div class="banner-top">
-        <img class="container-fluid" alt="AD" src="images/electric-wire.jpg" width="1350"  height="100"/>
+        <img class="container-fluid" alt="AD" src="images/electric-wire.jpg" width="1350" height="100" />
 
     </div>
     <div class="container~fluid">
-
+        <div class="bottom123">
         <form id="form1" runat="server">
             <div>
                 <asp:PlaceHolder ID="PublicNav" runat="server">
@@ -142,17 +142,20 @@
                 </asp:ContentPlaceHolder>
             </div>
         </form>
-               <footer class="container-fluid">
-                    <nav class="nav navbar-inverse navbar-fixed-bottom">
-                        <p class="navbar-text">Address: Dandong city of Dandong City, Liaoning Province Huiquan Industrial Park, 7th Street.</p>
-<P class="navbar-text">Postal Code: 118009
+            </div>
+        <footer class="container-fluid">
+            <nav class="nav navbar-inverse navbar-fixed-bottom">
+                <p class="navbar-text">Address: Dandong city of Dandong City, Liaoning Province Huiquan Industrial Park, 7th Street.</p>
+                <p class="navbar-text">
+                    Postal Code: 118009
 Contact: Chen Guodong
 Tel: + 86-0415-3457911
 Fax: + 86-0415-3457933
-E-mail: ddjjxlgs@163.com </P>
+E-mail: ddjjxlgs@163.com
+                </p>
 
-                    </nav>
-               </footer>
+            </nav>
+        </footer>
     </div>
     <!-- Script session -->
     <script src="Scripts/jquery-2.1.4.min.js"></script>
