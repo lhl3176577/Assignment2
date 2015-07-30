@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomePage.master.cs" Inherits="Assignment2.HomePage" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Author:Hongliang Liu 200255268 -->
+<!-- web app Name: assignment2 -->
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- css session -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/Styles.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <div class="banner-top">
+        <img class="container-fluid" alt="AD" src="images/electric-wire.jpg" width="1350"  height="100"/>
+
+    </div>
+    <div class="container~fluid">
+
+        <form id="form1" runat="server">
+            <div>
+                <asp:PlaceHolder ID="PublicNav" runat="server">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Jin Jia Wire</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/">HOME</a></li>
+                                    <li><a href="/Profile.aspx">PROFILE</a></li>
+                                    <li><a href="/New.aspx">NEWS</a></li>
+                                    <li><a href="/Product.aspx">PRODUCT</a></li>
+                                    <li><a href="/JobOffer.aspx">JOBOFFER</a></li>
+                                    <li><a href="/ContactUs.aspx">CONTACT US</a></li>
+
+                                    <!--                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>  
+                   -->
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="/Register.aspx">REGISTER</a></li>
+                                    <li><a href="/Login.aspx">LOGIN</a></li>
+
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+
+
+                </asp:PlaceHolder>
+                <!-- PublicNav -->
+
+                <asp:PlaceHolder ID="PrivateNav" runat="server">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Jin Jia Wire</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/">HOME</a></li>
+                                    <li><a href="#">BOOKING PRODUCT</a></li>
+                                    <li><a href="#">VIEW ORDERS</a></li>
+                                    <li><a href="#">COMPUTE</a></li>
+
+
+                                    <!--                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>  
+                   -->
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="navbar-text">Welcome,<asp:LoginName ID="LoginName1" runat="server" />
+                                    </li>
+                                    <li>
+                                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+
+
+                </asp:PlaceHolder>
+                <!-- Private -->
+
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+               <footer class="container-fluid">
+                    <nav class="nav navbar-inverse navbar-fixed-bottom">
+                        <p class="navbar-text">Address: Dandong city of Dandong City, Liaoning Province Huiquan Industrial Park, 7th Street.</p>
+<P class="navbar-text">Postal Code: 118009
+Contact: Chen Guodong
+Tel: + 86-0415-3457911
+Fax: + 86-0415-3457933
+E-mail: ddjjxlgs@163.com </P>
+
+                    </nav>
+               </footer>
+    </div>
+    <!-- Script session -->
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
